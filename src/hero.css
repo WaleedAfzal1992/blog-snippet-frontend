@@ -1,0 +1,85 @@
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+  }
+  
+  .text-section {
+    flex: 1;
+    padding-right: 20px; /* Space between text and image on larger screens */
+  }
+  
+  .image-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2d87f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .subheading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .dynamic-text {
+    color: rgb(189, 1, 189);
+    font-weight: bold;
+  }
+  
+  .learn-text {
+    font-weight: bold;
+  }
+  
+  /* Mobile view: Stack text and image sections */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column; /* Stack text and image sections vertically */
+      padding: 30px 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .text-section {
+      flex: none; /* Allow text section to take full width */
+      margin-bottom: 20px; /* Add space between text and image */
+    }
+  
+    .image-section {
+      flex: none; /* Allow image section to take full width */
+    }
+  
+    .subheading {
+      font-size: 1.5rem; /* Reduce font size for small screens */
+    }
+  
+    .description {
+      font-size: 1rem; /* Adjust description font size for small screens */
+    }
+  
+    .btn {
+      padding: 8px 16px; /* Adjust button padding on small screens */
+      font-size: 1rem; /* Adjust button font size */
+      margin-top: 15px; /* Add space above button */
+    }
+  }
+  

@@ -1,0 +1,53 @@
+.quotes-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap; /* Allow wrapping of cards on smaller screens */
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Default width for larger screens */
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect width calculation */
+    margin-bottom: 20px; /* Space between cards in a row */
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Testimonial Section */
+  .testimonial-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .testimonial-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-section p {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* Mobile view: Stack cards vertically */
+  @media (max-width: 768px) {
+    .quotes-section {
+      justify-content: center; /* Center cards on small screens */
+    }
+  
+    .card {
+      width: 100%; /* Cards take full width on mobile */
+      margin-bottom: 20px; /* Add space between stacked cards */
+    }
+  }
+  

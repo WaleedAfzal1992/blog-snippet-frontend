@@ -1,0 +1,118 @@
+/* Container for the whole form and image section */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Container for image and form, centering them horizontally */
+.login-content {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    height: 70%;
+    width: 100%;
+}
+
+/* Image section */
+.login-image {
+    width: 50%;
+    background: url('C:\Users\ADMIN\Desktop\React-Code-Snippet\myapp\public\su07nq96.png') center/cover no-repeat;
+}
+
+/* Form section */
+.login-form {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form form {
+    
+    width: 70%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.15); /*  Adjusted for transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style for form divs */
+.login-form div {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input field styling */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.login-form button[type="submit"] {
+    padding: 10px;
+    background-color: midnightblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+.login-form button[type="submit"]:hover {
+    background-color: rgb(20, 20, 165);
+}
+
+/* Separator styling */
+.separator {
+    text-align: center;
+    margin: 20px 0;
+    color: #777;
+}
+
+/* Signup link styling */
+.signup-link {
+    text-align: center;
+}
+
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    .login-content {
+        flex-direction: column;
+    }
+
+    .login-image, .login-form {
+        width: 100%;
+    }
+}
+
+

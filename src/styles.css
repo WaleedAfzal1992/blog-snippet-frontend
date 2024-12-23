@@ -1,0 +1,77 @@
+.editor-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 200px;
+  margin-top: 10px;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.toolbar button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Bold styling */
+.DraftEditor-root .public-DraftStyleDefault-bold {
+  font-weight: bold;
+}
+
+/* Block type: H1 */
+.DraftEditor-root h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* Block type: H2 */
+.DraftEditor-root h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Unordered list styling */
+.DraftEditor-root ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Center alignment */
+.DraftEditor-root .public-DraftStyleDefault-center {
+  text-align: center;
+}
+
+.DraftEditor-root .center {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text inside the div */
+  margin: 10px 0; /* Optional margin for spacing */
+}
+
+.centered-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;  /* Optional, to center text within the element */
+  max-width: 80%;      /* Optional, to control the width */
+}
+
+
+textarea {
+  height: 30vh; /* 20% of the viewport height */
+}
+

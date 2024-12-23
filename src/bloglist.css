@@ -1,0 +1,35 @@
+/* styles.css */
+.blog-list {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .blog-list h1 {
+    text-align: center;
+  }
+  
+  .blog-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .blog-item h2 {
+    color: #333;
+  }
+  
+  .blog-item p {
+    color: #666;
+  }
+  
+  .read-more {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
