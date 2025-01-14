@@ -22,7 +22,7 @@
 /* Image section */
 .login-image {
     width: 50%;
-    background: url('C:\Users\ADMIN\Desktop\React-Code-Snippet\myapp\public\su07nq96.png') center/cover no-repeat;
+    background: url('/su07nq96.png') center/cover no-repeat;
 }
 
 /* Form section */
