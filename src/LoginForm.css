@@ -22,7 +22,7 @@
 /* Image section */
 .login-image {
     width: 50%;
-    background: url('%PUBLIC_URL%/su07nq96.png') center/cover no-repeat;
+    /*background: url('%PUBLIC_URL%/su07nq96.png') center/cover no-repeat;*/
 }
 
 /* Form section */

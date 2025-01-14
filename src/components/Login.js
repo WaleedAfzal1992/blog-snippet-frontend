@@ -8,9 +8,9 @@ const LoginForm = () => {
         username: '',
         password: '',
     });
-    
+
     const [error, setError] = useState(null); // For handling error messages
-    
+
     const navigate = useNavigate(); // Initialize useNavigate hook
 
     const handleChange = (e) => {
@@ -22,7 +22,7 @@ const LoginForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         const dataToSend = {
             username: formData.username,
             password: formData.password,
@@ -34,13 +34,13 @@ const LoginForm = () => {
                     'Content-Type': 'application/json'
                 }
             });
-            
+
             // Assuming response contains token or success data
             if (response.status === 200) {
                 // Store the token in localStorage (or sessionStorage for temporary storage)
                 localStorage.setItem('access_token', response.data.access_token);
                 localStorage.setItem('user_info',  JSON.stringify(response.data.user_info));
-                
+
                 alert("Login successful!");
                 // Redirect to home page after successful login
                 navigate('/');
@@ -54,7 +54,10 @@ const LoginForm = () => {
     return (
         <div className="login-container">
             <div className="login-content">
-                <div className="login-image"></div>
+                {/* Image section in JSX */}
+                <div className="login-image">
+                    <img src="/su07nq96.png" alt="Login" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                </div>
                 <div className="login-form">
                     <form onSubmit={handleSubmit}>
                         <div>
@@ -66,7 +69,7 @@ const LoginForm = () => {
                             <input type="password" name="password" value={formData.password} onChange={handleChange} required />
                         </div>
                         <button type="submit">Login</button>
-                        
+
                         {error && <div className="error-message">{error}</div>} {/* Display error message */}
 
                         <div className="separator">or</div>
