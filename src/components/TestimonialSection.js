@@ -6,7 +6,7 @@ function TestimonialSection() {
     <div className="testimonial-section">
       <h2>What Our Students Say</h2>
       <p>
-        "CodeWithUs helped me go from beginner to proficient in Python in
+        "CodeWithPyOps helped me go from beginner to proficient in Python in
         just a few weeks! The courses are clear and easy to follow."
       </p>
       

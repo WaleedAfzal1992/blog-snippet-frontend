@@ -91,35 +91,60 @@ body {
   }
   
   /* Footer */
-  footer {
-    background-color: #2d87f0;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: relative; /* Keeps it in normal flow of the document */
-    width: 100%;
-    margin-top: auto; 
-    bottom: 0;
-  }
   
-  /* If the footer should always be at the bottom of the page, use a flexbox layout */
-  body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main-content {
-    flex: 1; /* Ensures content takes up all remaining space */
-  }
-  
-  .social-icons {
-    margin-top: 10px;
-  }
-  
-  .social-icons a {
-    margin: 0 10px;
-    font-size: 1.2rem;
-  }
+  .site-footer {
+  background-color: #e6eff8;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
 
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.footer-icon.youtube {
+  color: #FF0000;
+}
+
+.footer-icon.facebook {
+  color: #1877F2;
+}
+
+.footer-column a:hover {
+  color: #000;
+}

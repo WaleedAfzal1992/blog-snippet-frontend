@@ -9,7 +9,8 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Contactus from './components/Contactus';
 import BlogUpdate from './components/BlogUpdate';
-import Footer from './components/Footer'; // Import Footer
+import Courses from './components/Courses';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
                     <Route path="/blog/" element={<BlogArticle />} />
                     <Route path="/blog-list" element={<BlogList />} />
                     <Route path="/blog/:id" element={<BlogDetail />} />
+                    <Route path="/courses" element={<Courses />} />
                     <Route path="/register" element={<Registration />} />
                     <Route path="/login" element={<Login />} />
                 </Routes>

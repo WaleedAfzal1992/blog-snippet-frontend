@@ -35,14 +35,14 @@ function HeroSection() {
   return (
     <div className="hero-section">
       <div className="text-section">
-        <h1>CodeWithUs</h1>
+        <h1>CodeWithPyOps</h1>
         <p className="subheading">
           <span className="learn-text">Learn </span>
           <span className="dynamic-text">{currentText}</span>
         </p>
         <p className="description">
           Confused on which course to take? I have got you covered. Browse
-          courses and find out the best course for you. It's free! Code With Us is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.
+          courses and find out the best course for you. It's free! Code With PyOps is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.
         </p>
         
       </div>
