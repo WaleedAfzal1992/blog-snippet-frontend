@@ -1,0 +1,289 @@
+.devops-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.devops-header {
+  margin-bottom: 3rem;
+  background-image: url(https://sunsprinkle.pk/wp-content/uploads/2024/04/bg-pheader.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px; 
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.devops-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text visibility */
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.devops-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 7.5rem;
+  color: gold;
+  z-index: 999;
+  width: 100%; /* Take full width */
+  padding: 0 1rem;
+}
+
+.intro-text {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin-bottom: 7.5rem;
+  padding: 0 1rem; 
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  z-index: 999;
+}
+
+.connect-section {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.connect-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.solution-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.solution-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.our-works {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.our-works h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.core-solution {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.core-solution h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  height: 2px;
+  background-color: #eaeaea;
+  width: 100px;
+  margin: 1rem auto;
+}
+
+.sunsprinkle-edge {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.sunsprinkle-edge h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.professional-admin {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.professional-admin h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.solutions-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.intro-section {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.solutions-content {
+  margin: 4rem 0;
+}
+
+.solution-item {
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.solution-item.left-aligned {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.solution-item.right-aligned {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.solution-content {
+  max-width: 600px;
+  width: 100%;
+}
+
+.solution-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.left-aligned .solution-header {
+  flex-direction: row;
+}
+
+.right-aligned .solution-header {
+  flex-direction: row-reverse;
+}
+
+.solution-icon {
+  color: #007bff;
+  font-size: 1.8rem;
+  min-width: 2rem;
+}
+
+.solution-item h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #222;
+}
+
+.solution-item p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+/* Yellow icon color */
+.solution-icon.yellow-icon {
+  color: #f3c006; /* Matches the yellow in the image */
+  font-size: 3rem;
+}
+
+/* Optional: space out icon from text */
+.solution-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0a1e3f;
+}
+
+.solution-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.solution-item.left-aligned {
+  flex-direction: row;
+}
+
+.solution-item.right-aligned {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* src/components/DataFeatures.css */
+.data-features {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #f3c006; /* Bright yellow */
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0a1e3f;
+  margin-bottom: 1rem;
+}
+
+.feature-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}

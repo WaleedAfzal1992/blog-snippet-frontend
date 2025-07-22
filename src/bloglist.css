@@ -1,8 +1,10 @@
 /* styles.css */
+
 .blog-list {
     width: 80%;
     margin: auto;
     font-family: Arial, sans-serif;
+    min-height: 50vh;
   }
   
   .blog-list h1 {

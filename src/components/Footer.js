@@ -30,7 +30,7 @@ function Footer() {
           <h4>Legal</h4>
           <ul>
             <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
+            <li><a href="/privacypolicy">Privacy</a></li>
             <li><a href="#">Refund</a></li>
           </ul>
         </div>
@@ -46,7 +46,7 @@ function Footer() {
         </div>
 
       </div>
-      <p>&copy; 2025 <strong>CodeWithPyOps</strong>. Powered by <strong>CodeWithUs</strong>.</p>
+      <p className='wright'>&copy; 2025 <strong>CodeWithPyOps</strong>. Powered by <strong>CodeWithPyOps</strong>.</p>
     </footer>
     
   );

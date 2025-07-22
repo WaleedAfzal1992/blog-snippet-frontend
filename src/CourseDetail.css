@@ -1,0 +1,189 @@
+.course-detail {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.course-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #05dfa1;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.breadcrumb {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.stars {
+  color: #ec0404;
+  font-weight: bold;
+}
+
+.rating-count,
+.students {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn-get-started {
+  padding: 8px 18px;
+  background-color: #015c42;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.course-image-box img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.course-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* NEW: Course Content Section (Left) */
+.course-content-section {
+  flex: 2;
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.course-content-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.course-content-structured .section-block {
+  margin-bottom: 25px;
+}
+
+.course-content-structured .section-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-content-structured ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.course-content-structured ul li {
+  margin-bottom: 8px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Right Side – Sidebar */
+.course-sidebar {
+  flex: 1;
+  padding: 25px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+.price-section h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.discount-note {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.btn-add-to-cart,
+.btn-buy-now {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.btn-add-to-cart {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-buy-now {
+  background-color: #28a745;
+  color: white;
+}
+
+.money-back {
+  font-size: 0.85rem;
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
+
+.course-meta p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-header,
+  .course-body {
+    flex-direction: column;
+  }
+
+  .course-image-box img {
+    width: 100%;
+  }
+
+  .course-content-section,
+  .course-sidebar {
+    width: 100%;
+  }
+}

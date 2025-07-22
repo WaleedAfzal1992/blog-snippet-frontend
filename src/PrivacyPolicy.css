@@ -1,0 +1,74 @@
+.privacy-container {
+  max-width: 1180px;
+  margin: 80px auto 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.privacy-updated {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.privacy-section {
+  margin-bottom: 30px;
+}
+
+.privacy-section h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.privacy-section p,
+.privacy-section li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.privacy-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.email-box {
+  background-color: #f1f1f1;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #333;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-container {
+    padding: 15px;
+    margin: 60px 10px 20px;
+  }
+
+  .privacy-title {
+    font-size: 24px;
+  }
+
+  .privacy-section h2 {
+    font-size: 16px;
+  }
+
+  .privacy-section p,
+  .privacy-section li {
+    font-size: 14px;
+  }
+}

@@ -119,3 +119,9 @@
 .course-button:hover {
   background-color: #ddd;
 }
+
+.course-link {
+  color: rgb(53, 53, 53);
+  text-decoration: none;
+  display: block;
+}

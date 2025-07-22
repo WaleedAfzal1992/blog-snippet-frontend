@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BlogArticle from './components/BlogArticle';
 import BlogList from './components/BlogList';
 import BlogDetail from "./components/BlogDetail";
@@ -10,7 +10,14 @@ import Home from './components/Home';
 import Contactus from './components/Contactus';
 import BlogUpdate from './components/BlogUpdate';
 import Courses from './components/Courses';
+import CourseDetail from './components/CourseDetail';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import CartPage from './components/CartPage';
+import DevopsSolutions from './components/DevOpsSolutions';
+import DataExtraction from './components/DataExtraction';
+import WebDevelopment from './components/WebDevelopment';
 import Footer from './components/Footer';
+import './App.css';
 
 const App = () => {
     return (
@@ -25,6 +32,12 @@ const App = () => {
                     <Route path="/blog-list" element={<BlogList />} />
                     <Route path="/blog/:id" element={<BlogDetail />} />
                     <Route path="/courses" element={<Courses />} />
+                    <Route path="/courses/:slug" element={<CourseDetail />} />
+                    <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+                    <Route path="/cart" element={<CartPage />} />
+                    <Route path="/devops-solution" element={<DevopsSolutions />} />
+                    <Route path="/data-extraction" element={<DataExtraction />} />
+                    <Route path="/web-development" element={<WebDevelopment />} />
                     <Route path="/register" element={<Registration />} />
                     <Route path="/login" element={<Login />} />
                 </Routes>
@@ -36,7 +49,7 @@ const App = () => {
 
 // NavbarWrapper component that conditionally renders the Navbar based on the route
 const NavbarWrapper = () => {
-    const location = useLocation();
+    
 
     // Don't show Navbar on login or register page
     

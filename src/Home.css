@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    min-height: 100vh;
   }
   
   h1 {
@@ -147,4 +148,8 @@ body {
 
 .footer-column a:hover {
   color: #000;
+}
+
+.wright {
+  text-align: center;
 }

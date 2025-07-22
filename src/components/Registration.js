@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import '../Registration_and_Login.css';
 
 const RegistrationForm = () => {
@@ -11,6 +12,7 @@ const RegistrationForm = () => {
         password: '',
         confirmPassword: '',
     });
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         setFormData({
@@ -42,6 +44,7 @@ const RegistrationForm = () => {
             });
             alert("Registration successful!");
             // Redirect or further actions on success
+            navigate('/login');
         } catch (error) {
             console.error("There was an error registering the user!", error);
             alert("Registration failed.");

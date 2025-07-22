@@ -1,0 +1,93 @@
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f80505;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-box h3 {
+  margin-bottom: 0.5rem;
+}
+
+.phone-number {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.quote-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  border: 1px solid #eee;
+  background-color: #18f7c7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.service-icon {
+  color: #007bff; /* Blue color for icons */
+  margin-bottom: 1.5rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.view-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+}

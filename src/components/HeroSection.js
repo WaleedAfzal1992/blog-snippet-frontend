@@ -48,7 +48,7 @@ function HeroSection() {
       </div>
       <div className="image-section">
         <img
-          src="/Pytho.jpg" // Replace with actual image URL
+          src="/Pyops.jpeg" // Replace with actual image URL
           alt="CodeWithUs"
         />
       </div>
