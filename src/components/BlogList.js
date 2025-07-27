@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import '../bloglist.css';
-import Footer from './Footer';
+
 
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
@@ -40,7 +40,7 @@ const BlogList = () => {
               <h2>{blog.title}</h2>
               <p>{blog.content.substring(0, 100)}...</p>
               <div className="buttons">
-              <a href={`/blog/${blog.id}`} className="read-more">
+              <a href={`/blog/${blog.slug}`} className="read-more">
                 Read More
               </a>
               </div>

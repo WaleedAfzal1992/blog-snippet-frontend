@@ -106,13 +106,31 @@
 
 /* Responsive design */
 @media (max-width: 800px) {
+    .login-container {
+        margin-right: 10px;
+        height: auto;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
     .login-content {
         flex-direction: column;
+        height: auto;
+        width: 90%;
+        max-width: 90%;
+        margin: auto;
     }
 
-    .login-image, .login-form {
-        width: 100%;
+    .login-image {
+        display: none; /* ✅ Optional: hide image on mobile to give space */
+    }
+
+    .login-form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .login-form form {
+        width: 90%; /* Take full width */
     }
 }
-
-

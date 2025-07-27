@@ -4,6 +4,7 @@ import '../styles.css';
 
 const CreateArticle = () => {
   const [title, setTitle] = useState('');
+  const [slug, setSlug] = useState('');
   const [content, setContent] = useState('');
   const [isSuperUser, setIsSuperUser] = useState(null);
   const [isStaffMember, setIsStaffMember] = useState(null);
@@ -59,7 +60,7 @@ const CreateArticle = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const article = { title, content };
+    const article = { title, slug, content };
 
     fetch('http://127.0.0.1:8000/api/articles/', {
       method: 'POST',
@@ -85,6 +86,15 @@ const CreateArticle = () => {
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Slug:</label>
+          <input
+            type="text"
+            value={slug}
+            onChange={(e) => setSlug(e.target.value)}
             required
           />
         </div>

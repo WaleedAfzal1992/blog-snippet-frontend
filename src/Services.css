@@ -56,14 +56,15 @@
 
 .service-card {
   border: 1px solid #eee;
-  background-color: #18f7c7;
+  background: linear-gradient(to right, #1e1e2f, #2c2c3f);
+
   border-radius: 8px;
   padding: 1.5rem;
   transition: transform 0.3s ease;
 }
 
 .service-icon {
-  color: #007bff; /* Blue color for icons */
+  color: #ffffff; /* Blue color for icons */
   margin-bottom: 1.5rem;
 }
 
@@ -78,12 +79,12 @@
 }
 
 .service-card p {
-  color: #555;
+  color: #000000;
   margin-bottom: 1.5rem;
 }
 
 .view-more {
-  color: #007bff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }

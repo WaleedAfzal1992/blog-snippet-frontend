@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const BlogUpdate = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const navigate = useNavigate();
   const [blog, setBlog] = useState({ title: '', content: '' });
   const [loading, setLoading] = useState(true);
@@ -13,7 +13,7 @@ const BlogUpdate = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/articles/${id}`);
+        const response = await axios.get(`http://127.0.0.1:8000/api/articles/${slug}`);
         setBlog(response.data);
         setLoading(false);
       } catch (err) {
@@ -23,7 +23,7 @@ const BlogUpdate = () => {
     };
 
     fetchBlog();
-  }, [id]);
+  }, [slug]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -33,7 +33,7 @@ const BlogUpdate = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://127.0.0.1:8000/api/articles/${id}/update/`, blog, {
+      await axios.put(`http://127.0.0.1:8000/api/articles/${slug}/update/`, blog, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${localStorage.getItem('access_token')}`
@@ -41,7 +41,7 @@ const BlogUpdate = () => {
       });
       setMessage('Blog updated successfully');
       setTimeout(() => {
-        navigate(`/blog/${id}`);
+        navigate(`/blog/${slug}`);
       }, 2000);
     } catch (err) {
       setError('Failed to update the blog. Please try again later.');

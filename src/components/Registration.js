@@ -9,6 +9,7 @@ const RegistrationForm = () => {
         lastName: '',
         username: '',
         email: '',
+        phonenumber: '',
         password: '',
         confirmPassword: '',
     });
@@ -33,6 +34,7 @@ const RegistrationForm = () => {
             Last_name: formData.lastName,
             name: formData.username,
             Email: formData.email,
+            phone_number: formData.phonenumber,
             password: formData.password,
         };
 
@@ -69,6 +71,11 @@ const RegistrationForm = () => {
                 <label>Email</label>
                 <input type="email" name="email" value={formData.email} onChange={handleChange} required />
             </div>
+            <div>
+                <label>Phone Number</label>
+                <input type="tel" name="phonenumber" value={formData.phonenumber} onChange={handleChange} required pattern="[0-9]{11}" 
+        placeholder="e.g. 03001234567" />
+             </div>   
             <div>
                 <label>Password</label>
                 <input type="password" name="password" value={formData.password} onChange={handleChange} required />

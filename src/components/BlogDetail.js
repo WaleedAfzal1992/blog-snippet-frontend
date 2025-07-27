@@ -8,7 +8,7 @@ import "../blogdetail.css";
 import { FaRegCopy } from "react-icons/fa"; // Import copy icon
 
 const BlogDetail = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const navigate = useNavigate(); // Use useNavigate hook for navigation
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -32,7 +32,7 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/articles/${id}`);
+        const response = await axios.get(`http://127.0.0.1:8000/api/articles/${slug}`);
         setBlog(response.data);
         setLoading(false);
       } catch (err) {
@@ -42,7 +42,7 @@ const BlogDetail = () => {
     };
 
     fetchBlog();
-  }, [id]);
+  }, [slug]);
 
   const copyToClipboard = (code) => {
     navigator.clipboard.writeText(code).then(() => {
@@ -55,7 +55,7 @@ const BlogDetail = () => {
     if (confirmDelete) {
       const token = localStorage.getItem("access_token"); // Assuming JWT is stored in localStorage
       try {
-        const response = await axios.delete(`http://127.0.0.1:8000/api/articles/${id}/delete/`, {
+        const response = await axios.delete(`http://127.0.0.1:8000/api/articles/${slug}/delete/`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -114,7 +114,7 @@ const BlogDetail = () => {
         />
         {(isSuperUser || isStaffMember) && (
           <div className="blog-actions">
-            <Link to={`/blog/${id}/update`} className="button-updated">
+            <Link to={`/blog/${slug}/update`} className="button-updated">
               Update
             </Link>
             <button onClick={handleDelete} className="button-delete">

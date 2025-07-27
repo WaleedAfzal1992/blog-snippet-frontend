@@ -20,8 +20,8 @@ function Footer() {
         <div className="footer-column">
           <h4>Learn</h4>
           <ul>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Tutorials</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="#">Blog</a></li>
             <li><a href="#">Notes</a></li>
           </ul>
         </div>
@@ -38,10 +38,10 @@ function Footer() {
         <div className="footer-column">
           <h4>Social</h4>
           <ul>
-            <li><a href="#"><FaGithub className="footer-icon" /> GitHub</a></li>
+            <li><a href="https://github.com/pyopstech"><FaGithub className="footer-icon" /> GitHub</a></li>
             <li><a href="#"><FaXTwitter className="footer-icon" /> Twitter (X)</a></li>
-            <li><a href="#"><FaYoutube className="footer-icon youtube" /> YouTube</a></li>
-            <li><a href="#"><FaFacebookF className="footer-icon facebook" /> Facebook</a></li>
+            <li><a href="https://www.youtube.com/@PyOps-tech"><FaYoutube className="footer-icon youtube" /> YouTube</a></li>
+            <li><a href="https://web.facebook.com/pyopsdev"><FaFacebookF className="footer-icon facebook" /> Facebook</a></li>
           </ul>
         </div>
 
