@@ -68,6 +68,9 @@ const LoginForm = () => {
                             <label>Password</label>
                             <input type="password" name="password" value={formData.password} onChange={handleChange} required />
                         </div>
+                        <div className="forgot-password-link">
+                            <Link to="/password-reset-link">Forgot Password?</Link>
+                        </div>
                         <button type="submit">Login</button>
 
                         {error && <div className="error-message">{error}</div>} {/* Display error message */}

@@ -16,6 +16,8 @@ import CartPage from './components/CartPage';
 import DevopsSolutions from './components/DevOpsSolutions';
 import DataExtraction from './components/DataExtraction';
 import WebDevelopment from './components/WebDevelopment';
+import Passwordresetlink from './components/passwordresetlink';
+import PasswordResetPage from './components/PasswordResetPage'
 import Footer from './components/Footer';
 import './App.css';
 
@@ -34,6 +36,8 @@ const App = () => {
                     <Route path="/courses" element={<Courses />} />
                     <Route path="/courses/:slug" element={<CourseDetail />} />
                     <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+                    <Route path="/password-reset-link" element={<Passwordresetlink />} />
+                    <Route path="/reset-password/:uid/:token" element={<PasswordResetPage />} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/devops-solution" element={<DevopsSolutions />} />
                     <Route path="/data-extraction" element={<DataExtraction />} />
