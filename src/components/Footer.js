@@ -14,8 +14,6 @@ function Footer() {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/contact-us">Contact</a></li>
-            <li><a href="#">Work With Us</a></li>
-            <li><a href="#">My Gear</a></li>
           </ul>
         </div>
 
@@ -30,9 +28,9 @@ function Footer() {
         <div className="footer-column">
           <h4>Legal</h4>
           <ul>
-            <li><a href="#">Terms</a></li>
+            <li><a href="/terms-and-conditions">Terms</a></li>
             <li><a href="/privacypolicy">Privacy</a></li>
-            <li><a href="#">Refund</a></li>
+            <li><a href="/refund-policy">Refund</a></li>
           </ul>
         </div>
 
@@ -40,7 +38,7 @@ function Footer() {
           <h4>Social</h4>
           <ul>
             <li><a href="https://github.com/pyopstech"><FaGithub className="footer-icon" /> GitHub</a></li>
-            <li><a href="#"><FaInstagram className="footer-icon" /> Instagram</a></li>
+            <li><a href="https://www.instagram.com/pyops.dev/"><FaInstagram className="footer-icon" /> Instagram</a></li>
             <li><a href="https://www.youtube.com/@PyOps-tech"><FaYoutube className="footer-icon youtube" /> YouTube</a></li>
             <li><a href="https://web.facebook.com/pyopsdev"><FaFacebookF className="footer-icon facebook" /> Facebook</a></li>
           </ul>

@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
 
       <div className="privacy-section">
         <h2>8. Contact Us:</h2>
-        <p>For questions or concerns regarding this policy, reach out our ContactUs page.</p>
+        <p>For questions or concerns regarding this policy, please contact us via our <a href="/contact-us">Contact Us</a> page with your order details.</p>
       </div>
     </div>
   );

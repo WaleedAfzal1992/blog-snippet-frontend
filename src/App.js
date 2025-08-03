@@ -17,7 +17,9 @@ import DevopsSolutions from './components/DevOpsSolutions';
 import DataExtraction from './components/DataExtraction';
 import WebDevelopment from './components/WebDevelopment';
 import Passwordresetlink from './components/passwordresetlink';
-import PasswordResetPage from './components/PasswordResetPage'
+import PasswordResetPage from './components/PasswordResetPage';
+import TermsAndConditions from './components/TermsAndConditions';
+import RefundPolicy from './components/RefundPolicy';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -40,6 +42,8 @@ const App = () => {
                     <Route path="/reset-password/:uid/:token" element={<PasswordResetPage />} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/devops-solution" element={<DevopsSolutions />} />
+                    <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+                    <Route path="/refund-policy" element={<RefundPolicy />} />
                     <Route path="/data-extraction" element={<DataExtraction />} />
                     <Route path="/web-development" element={<WebDevelopment />} />
                     <Route path="/register" element={<Registration />} />

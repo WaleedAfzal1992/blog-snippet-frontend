@@ -7,7 +7,6 @@ import '../bloglist.css';
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     // Fetch blog articles from the API
@@ -17,7 +16,6 @@ const BlogList = () => {
         setBlogs(response.data);
         setLoading(false);
       } catch (err) {
-        setError("Failed to load blogs. Please try again later.");
         setLoading(false);
       }
     };
@@ -26,7 +24,6 @@ const BlogList = () => {
   }, []);
 
   if (loading) return <p>Loading blogs...</p>;
-  if (error) return <p>{error}</p>;
 
   return (
     <div className="blog-list">
