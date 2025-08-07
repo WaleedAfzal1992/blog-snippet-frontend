@@ -20,6 +20,7 @@ import Passwordresetlink from './components/passwordresetlink';
 import PasswordResetPage from './components/PasswordResetPage';
 import TermsAndConditions from './components/TermsAndConditions';
 import RefundPolicy from './components/RefundPolicy';
+import VoucherUpload from './components/VoucherUpload';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -46,6 +47,7 @@ const App = () => {
                     <Route path="/refund-policy" element={<RefundPolicy />} />
                     <Route path="/data-extraction" element={<DataExtraction />} />
                     <Route path="/web-development" element={<WebDevelopment />} />
+                    <Route path="/voucher" element={<VoucherUpload />} />
                     <Route path="/register" element={<Registration />} />
                     <Route path="/login" element={<Login />} />
                 </Routes>
