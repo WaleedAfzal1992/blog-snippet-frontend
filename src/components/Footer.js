@@ -14,6 +14,8 @@ function Footer() {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/contact-us">Contact</a></li>
+            <li>pyopstech@gmail.com</li>
+            0329 4374814
           </ul>
         </div>
 

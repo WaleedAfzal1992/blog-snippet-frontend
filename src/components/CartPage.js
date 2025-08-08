@@ -31,51 +31,6 @@ function CartPage() {
     fetchCart();
   }, []);
 
-const handleCheckout = async () => {
-  if (cartItems.length === 0) return;
-
-  const firstItem = cartItems[0];
-
-  try {
-    const response = await axios.post(
-      'http://127.0.0.1:8000/api/jazzcash-payment/',
-      {
-        course_id: firstItem.course.id,
-        quantity: firstItem.quantity
-      },
-      {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem('access_token')}`,
-        }
-      }
-    );
-
-    console.log("JazzCash Response:", response.data);
-    const { redirect_url, post_data } = response.data;
-
-    // Create a form
-    const form = document.createElement('form');
-    form.method = 'POST';
-    form.action = redirect_url;
-
-    // Add all post_data as hidden inputs
-    Object.keys(post_data).forEach(key => {
-      const input = document.createElement('input');
-      input.type = 'hidden';
-      input.name = key;
-      input.value = post_data[key];
-      form.appendChild(input);
-    });
-
-    // Submit the form
-    document.body.appendChild(form);
-    form.submit();
-
-  } catch (error) {
-    console.error("Checkout error:", error);
-    alert("Failed to initiate JazzCash payment.");
-  }
-};
 
 
   const calculateTotal = () => {
@@ -129,7 +84,9 @@ const handleCheckout = async () => {
               <span>Total:</span>
               <span>Rs {calculateTotal()}</span>
             </div>
-            <button className="btn-checkout" onClick={handleCheckout}>Proceed to Checkout</button>
+            <a href="/voucher">
+            <button className="btn-checkout">Proceed to Checkout</button>
+            </a>
             <Link to="/courses" className="btn-continue">Continue Shopping</Link>
           </div>
         </div>
